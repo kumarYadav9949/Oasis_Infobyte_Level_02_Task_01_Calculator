@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1 class="text-center p-3 title">Calculator</h1>
+  <div class="calculator p-2">
+    <div class="topContainer p-2 m-2">
+        <input type="text" id="calculation" class="typedNums" readonly>
+        <input type="text" id="result" class="resultNums" readonly>
+    </div>
+    <div class="buttons p-2">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteLastCharacter()">DEL</button>
+      <button onclick="appendParenthesis('(')">(</button>
+      <button onclick="appendParenthesis(')')">)</button>
+      <button class="numBold" onclick="appendNumber(7)">7</button>
+      <button class="numBold" onclick="appendNumber(8)">8</button>
+      <button class="numBold" onclick="appendNumber(9)">9</button>
+      <button onclick="appendOperator('/')">/</button>
+      <button class="numBold" onclick="appendNumber(4)">4</button>
+      <button class="numBold" onclick="appendNumber(5)">5</button>
+      <button class="numBold" onclick="appendNumber(6)">6</button>
+      <button onclick="appendOperator('*')">*</button>
+      <button class="numBold" onclick="appendNumber(1)">1</button>
+      <button class="numBold" onclick="appendNumber(2)">2</button>
+      <button class="numBold" onclick="appendNumber(3)">3</button>
+      <button onclick="appendOperator('-')">-</button>
+      <button onclick="appendOperator('.')">.</button>
+      <button class="numBold" onclick="appendNumber(0)">0</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="appendOperator('+')">+</button>
+    </div>
+</div>
+  <script src="calculator.js"></script>
+</body>
+</html>
